@@ -42,6 +42,7 @@
     height: 25rem;
     width: 25rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-left: 8rem;
@@ -51,17 +52,17 @@
 .page-title {
     text-align: center;
     font-family: 'Pattaya';
-    margin-top: 2rem;
+    margin-top: -4rem;
     font-size: 4rem;
     color: $mardi_white;
     text-shadow: 0px 10px 10px #000000;
+    order: 1;
 }
 
 .mardi-mask {
-    position: absolute;
     height: 13rem;
     width: auto;
-    margin-top: -14rem;
+    margin-top: -12rem;
 }
 
 //////////////////////////////////////////////
@@ -72,30 +73,28 @@
         margin-left: 6rem;
         margin-top: 14rem;
     }
-    .page-title {
-        font-size: 3.5rem;
-    }
-    .mardi-mask {
-        height: 12rem;
-        margin-top: -14rem;
-    }
 }
 
 @media (max-width: 991.9px) {
     .page-start-home {
         justify-content: center;
+        background-attachment: scroll //responsive background for ios
     }
     .page-start-about {
         justify-content: center;
+        background-attachment: scroll
     }
     .page-start-media {
         justify-content: center;
+        background-attachment: scroll
     }
     .page-start-faq {
         justify-content: center;
+        background-attachment: scroll
     }
     .page-start-contact {
         justify-content: center;
+        background-attachment: scroll
     }
     .title {
         height: 18rem;
@@ -108,6 +107,7 @@
     }
     .mardi-mask {
         height: 9rem;
-        margin-top: -10rem;
+        margin-top: -9rem;
+        -webkit-margin-top-collapse: collapse;
     }
 }
