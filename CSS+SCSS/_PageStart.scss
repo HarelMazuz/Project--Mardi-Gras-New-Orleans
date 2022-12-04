@@ -1,0 +1,113 @@
+//page start - full background
+@mixin page-start ($BGimg: url(../imgs/Mardi-Gras-About.jpg)) {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: $BGimg;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.page-start-about {
+    @include page-start();
+}
+
+.page-start-media {
+    @include page-start(url(../imgs/Mardi-Gras-Media.jpg));
+}
+
+.page-start-contact {
+    @include page-start(url(../imgs/Mardi-Gras-Contact.webp));
+}
+
+.page-start-faq {
+    @include page-start(url(../imgs/Mardi-Gras-FAQ.jpeg));
+}
+
+.page-start-home {
+    @include page-start(url(../imgs/Mardi-phone-background.webp));
+}
+
+//page start - mardi colors circle with page title 
+.title {
+    background: linear-gradient(to left, rgba($mardi_green, 0.7), rgba($mardi_green, 0.7) 33%, rgba($mardi_yellow, 0.7) 33%, rgba($mardi_yellow, 0.7) 66%, rgba($mardi_purple, 0.7) 66%);
+    border-radius: 50%;
+    border: 5px solid $mardi_white;
+    box-shadow: 0 0 7px $mardi_white, 0 0 10px $mardi_purple, 0 0 21px $mardi_white, 0 0 42px $mardi_white;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8rem;
+    margin-top: 13rem;
+}
+
+.page-title {
+    text-align: center;
+    font-family: 'Pattaya';
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: $mardi_white;
+    text-shadow: 0px 10px 10px #000000;
+}
+
+.mardi-mask {
+    position: absolute;
+    height: 13rem;
+    width: auto;
+    margin-top: -14rem;
+}
+
+//////////////////////////////////////////////
+@media (max-width: 1400px) {
+    .title {
+        height: 23rem;
+        width: 23rem;
+        margin-left: 6rem;
+        margin-top: 14rem;
+    }
+    .page-title {
+        font-size: 3.5rem;
+    }
+    .mardi-mask {
+        height: 12rem;
+        margin-top: -14rem;
+    }
+}
+
+@media (max-width: 991.9px) {
+    .page-start-home {
+        justify-content: center;
+    }
+    .page-start-about {
+        justify-content: center;
+    }
+    .page-start-media {
+        justify-content: center;
+    }
+    .page-start-faq {
+        justify-content: center;
+    }
+    .page-start-contact {
+        justify-content: center;
+    }
+    .title {
+        height: 18rem;
+        width: 18rem;
+        margin-left: -1rem;
+        margin-top: 16rem;
+    }
+    .page-title {
+        font-size: 3rem;
+    }
+    .mardi-mask {
+        height: 9rem;
+        margin-top: -10rem;
+    }
+}

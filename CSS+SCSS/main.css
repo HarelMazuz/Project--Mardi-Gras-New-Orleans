@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  font-family: "Roboto";
+}
+
+h1 {
+  color: #9454a6;
+  font-family: "Henny Penny";
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.hr-mardi {
+  border: 0;
+  height: 5px;
+  opacity: 60%;
+  background: linear-gradient(to right, #8CBF3F, #8CBF3F 33%, #F2CC0F 33%, #F2CC0F 66%, #9454a6 66%);
+  margin: 2.5rem 0;
+}
+
+.btn-mardi {
+  background: linear-gradient(45deg, #9454a6, #f2cc0f, #8cbf3f);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px #000000;
+  border-radius: 7%;
+  border: 3px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.btn-mardi:hover {
+  background: linear-gradient(45deg, #764385, #d1b10e, #77a335);
+  border: 3px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_logo, .nav_fireworks {
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  z-index: 1;
+  top: 0rem;
+}
+
+.navbar {
+  background: rgba(13, 13, 13, 0.6);
+  padding-top: 1.3rem;
+  -o-border-image: linear-gradient(to right, #8CBF3F, #8CBF3F 25%, #F2CC0F 50%, #F2CC0F 50%, #9454a6 75%) 1;
+     border-image: linear-gradient(to right, #8CBF3F, #8CBF3F 25%, #F2CC0F 50%, #F2CC0F 50%, #9454a6 75%) 1;
+  border-width: 0;
+  border-bottom-width: 1rem;
+  border-style: solid;
+}
+.navbar .split-nav {
+  margin-left: 6rem;
+}
+.navbar .selected {
+  text-shadow: 0 0 7px #f2f2f2, 0 0 10px #9454a6, 0 0 21px #f2f2f2, 0 0 42px #f2f2f2;
+  font-size: 1.7rem;
+  margin-top: -0.7rem;
+}
+.navbar a:hover {
+  text-shadow: 0 0 7px #f2f2f2, 0 0 10px #9454a6, 0 0 21px #f2f2f2, 0 0 42px #f2f2f2;
+  transition: all 0.1s ease-in-out;
+  transform: translateY(-9%);
+}
+
+@media (min-width: 1400px) {
+  .split-nav {
+    position: relative;
+    right: 7.5rem;
+  }
+}
+@media (max-width: 991.9px) {
+  .navbar {
+    border: none;
+  }
+  .navbar .navbar-toggler {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .navbar .split-nav {
+    margin-left: 0.8rem;
+  }
+  .nav_logo, .nav_fireworks {
+    height: 11rem;
+    width: 11rem;
+  }
+}
+.homepage-start-carousel .carousel-inner,
+.homepage-start-carousel .carousel-item,
+.homepage-start-carousel .carousel-item.active {
+  height: 100vh;
+}
+.homepage-start-carousel .carousel-item {
+  background-image: url(../imgs/media5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.homepage-start-carousel .carousel-item:nth-child(2) {
+  background-image: url(../imgs/media1.jpg);
+}
+.homepage-start-carousel .carousel-item:nth-child(3) {
+  background-image: url(../imgs/media2.jpg);
+}
+.homepage-start-carousel .carousel-item:nth-child(4) {
+  background-image: url(../imgs/Mardi-Gras-Media.jpg);
+}
+.homepage-start-carousel .carousel-item:nth-child(5) {
+  background-image: url(../imgs/media4.jpg);
+}
+
+.home-page-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 3rem;
+  z-index: 1;
+}
+
+.home-page-title {
+  font-family: "Pattaya";
+  font-size: 8rem;
+  text-shadow: 0px 10px 10px #000000;
+  color: #f2f2f2;
+}
+
+.colorful {
+  text-shadow: 0 0 0;
+  background-image: linear-gradient(to right, #8CBF3F, #8CBF3F 33%, #F2CC0F 33%, #F2CC0F 66%, #9454a6 66%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subject-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Pattaya";
+  text-align: left;
+  font-size: 3rem;
+}
+
+.bgc-mardi {
+  background: linear-gradient(to left, rgba(140, 191, 63, 0.8), rgba(140, 191, 63, 0.8) 33%, rgba(242, 204, 15, 0.8) 33%, rgba(242, 204, 15, 0.8) 66%, rgba(148, 84, 166, 0.8) 66%);
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+}
+
+.sponsers-index .sponser-title {
+  font-size: 3rem;
+  color: #f2f2f2;
+  text-shadow: 0px 10px 10px #000000;
+}
+.sponsers-index .sponsers-img {
+  border: 4px solid #0D0D0D;
+  width: 13.5rem;
+  height: 13.5rem;
+  border-radius: 100%;
+  box-shadow: -8px 0px 15px #000000;
+  transition: filter 0.5s;
+}
+.sponsers-index .sponsers-btn {
+  position: relative;
+  text-align: center;
+}
+.sponsers-index .sponser-name {
+  padding: 0 20px;
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sponsers-index .sponsers-btn:hover .sponsers-img {
+  filter: brightness(50%);
+}
+.sponsers-index .sponsers-btn:hover .sponser-name {
+  display: block;
+}
+
+.about-index img {
+  border-radius: 7%;
+  border: 3px solid #000;
+  padding: 0;
+}
+
+.footer {
+  -o-border-image: linear-gradient(to right, #8CBF3F, #8CBF3F 33%, #F2CC0F 33%, #F2CC0F 66%, #9454a6 66%) 1;
+     border-image: linear-gradient(to right, #8CBF3F, #8CBF3F 33%, #F2CC0F 33%, #F2CC0F 66%, #9454a6 66%) 1;
+  border-width: 0;
+  border-top-width: 7px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0D0D0D;
+  padding: 0rem 0 1rem;
+}
+.footer img {
+  height: 100px;
+  width: 100px;
+}
+.footer .footer-logo {
+  margin: 0 auto;
+}
+.footer p {
+  color: rgba(242, 242, 242, 0.8);
+  text-align: center;
+}
+.footer a {
+  color: #f2f2f2;
+}
+.footer a:hover {
+  text-shadow: 0 0 7px #f2f2f2, 0 0 10px #9454a6, 0 0 21px #f2f2f2;
+}
+
+@media (max-width: 991.9px) {
+  .home-page-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-left: 0;
+  }
+  .home-page-title {
+    font-family: "Pattaya";
+    font-size: 4.5rem;
+    text-shadow: 0px 10px 10px #000000;
+    color: #f2f2f2;
+    text-align: center;
+  }
+  .colorful {
+    text-shadow: 0 0 0;
+    background-image: linear-gradient(to right, #8CBF3F, #8CBF3F 33%, #F2CC0F 33%, #F2CC0F 66%, #9454a6 66%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .index-titels {
+    font-size: 2.2rem;
+  }
+  .subject-title {
+    margin: 0rem auto 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .sponsers-index .sponsers-img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .sponsers-index .sponser-name {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+  .about-index figure {
+    display: none;
+  }
+  .about-index img {
+    width: 100%;
+  }
+  .about-index p {
+    text-align: justify;
+  }
+}
+.page-start-about {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../imgs/Mardi-Gras-About.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.page-start-media {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../imgs/Mardi-Gras-Media.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.page-start-contact {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../imgs/Mardi-Gras-Contact.webp);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.page-start-faq {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../imgs/Mardi-Gras-FAQ.jpeg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.page-start-home {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../imgs/Mardi-phone-background.webp);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.title {
+  background: linear-gradient(to left, rgba(140, 191, 63, 0.7), rgba(140, 191, 63, 0.7) 33%, rgba(242, 204, 15, 0.7) 33%, rgba(242, 204, 15, 0.7) 66%, rgba(148, 84, 166, 0.7) 66%);
+  border-radius: 50%;
+  border: 5px solid #f2f2f2;
+  box-shadow: 0 0 7px #f2f2f2, 0 0 10px #9454a6, 0 0 21px #f2f2f2, 0 0 42px #f2f2f2;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8rem;
+  margin-top: 13rem;
+}
+
+.page-title {
+  text-align: center;
+  font-family: "Pattaya";
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #f2f2f2;
+  text-shadow: 0px 10px 10px #000000;
+}
+
+.mardi-mask {
+  position: absolute;
+  height: 13rem;
+  width: auto;
+  margin-top: -14rem;
+}
+
+@media (max-width: 1400px) {
+  .title {
+    height: 23rem;
+    width: 23rem;
+    margin-left: 6rem;
+    margin-top: 14rem;
+  }
+  .page-title {
+    font-size: 3.5rem;
+  }
+  .mardi-mask {
+    height: 12rem;
+    margin-top: -14rem;
+  }
+}
+@media (max-width: 991.9px) {
+  .page-start-home {
+    justify-content: center;
+  }
+  .page-start-about {
+    justify-content: center;
+  }
+  .page-start-media {
+    justify-content: center;
+  }
+  .page-start-faq {
+    justify-content: center;
+  }
+  .page-start-contact {
+    justify-content: center;
+  }
+  .title {
+    height: 18rem;
+    width: 18rem;
+    margin-left: -1rem;
+    margin-top: 16rem;
+  }
+  .page-title {
+    font-size: 3rem;
+  }
+  .mardi-mask {
+    height: 9rem;
+    margin-top: -10rem;
+  }
+}
+.history-photo {
+  height: 25rem;
+}
+
+.faq-accordion .accordion-button {
+  color: #fff;
+  font-size: 1.2rem;
+  border: 1px solid #fff;
+}
+.faq-accordion .accordion-purple {
+  background-color: rgba(148, 84, 166, 0.75);
+}
+.faq-accordion .accordion-green {
+  background-color: rgba(140, 191, 63, 0.75);
+}
+.faq-accordion .accordion-yellow {
+  background-color: rgba(242, 204, 15, 0.75);
+}
+.faq-accordion .accordion-purple:not(.collapsed) {
+  background-color: #9454a6;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.faq-accordion .accordion-green:not(.collapsed) {
+  background-color: #8cbf3f;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.faq-accordion .accordion-yellow:not(.collapsed) {
+  background-color: #f2cc0f;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.media {
+  background: linear-gradient(to left, rgba(148, 84, 166, 0.6), rgba(242, 204, 15, 0.6), rgba(140, 191, 63, 0.6));
+  border: 2px solid #0D0D0D;
+  box-shadow: 0px 2px 10px #000000;
+  border-radius: 2%;
+  padding: 1rem;
+}
+.media .main-img {
+  border: 3px solid #9454a6;
+  box-shadow: 0px 0px 7px #000000;
+  border-radius: 2%;
+  max-height: 70vh;
+}
+.media .photos-library {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0.3rem;
+  border-top: 3px solid #f2f2f2;
+  border-left: none;
+}
+.media .photos-library .photo {
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 0px 7px #000000;
+  border-radius: 4%;
+  max-height: 10rem;
+  margin-bottom: 0;
+  margin-right: 1rem;
+  margin-top: 0.75rem;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

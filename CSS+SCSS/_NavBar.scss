@@ -1,0 +1,66 @@
+                .logo_container {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .nav_logo {
+                    height: 12rem;
+                    width: 12rem;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0rem;
+                }
+                
+                .nav_fireworks {
+                    @extend .nav_logo;
+                }
+                
+                .navbar {
+                    background: rgba($color: $mardi_black, $alpha: 0.6);
+                    padding-top: 1.3rem;
+                    border-image: linear-gradient(to right, $mardi_green, $mardi_green 25%, $mardi_yellow 50%, $mardi_yellow 50%, $mardi_purple 75%)1;
+                    border-width: 0;
+                    border-bottom-width: 1rem;
+                    border-style: solid;
+                    .split-nav {
+                        margin-left: 6rem;
+                    }
+                    @mixin selected {
+                        text-shadow: 0 0 7px $mardi_white, 0 0 10px $mardi_purple, 0 0 21px $mardi_white, 0 0 42px $mardi_white;
+                    }
+                    .selected {
+                        @include selected;
+                        font-size: 1.7rem;
+                        margin-top: -0.7rem;
+                    }
+                    a:hover {
+                        @include selected;
+                        transition: all 0.1s ease-in-out;
+                        transform: translateY(-9%);
+                    }
+                }
+                
+                ////////////////////////////////////////////
+                @media (min-width: 1400px) {
+                    .split-nav {
+                        position: relative;
+                        right: 7.5rem;
+                    }
+                }
+                
+                @media (max-width: 991.9px) {
+                    .navbar {
+                        border: none;
+                        .navbar-toggler {
+                            margin-left: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                        .split-nav {
+                            margin-left: 0.8rem;
+                        }
+                    }
+                    .nav_logo {
+                        height: 11rem;
+                        width: 11rem;
+                    }
+                }
