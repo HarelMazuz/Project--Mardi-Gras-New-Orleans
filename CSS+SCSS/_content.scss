@@ -23,17 +23,14 @@
     //accordion colors when selected
     .accordion-purple:not(.collapsed) {
         background-color: rgba($mardi_purple, $alpha: 1);
-        color: #fff;
         font-size: 1.4rem;
     }
     .accordion-green:not(.collapsed) {
         background-color: rgba($mardi_green, $alpha: 1);
-        color: #fff;
         font-size: 1.4rem;
     }
     .accordion-yellow:not(.collapsed) {
         background-color: rgba($mardi_yellow, $alpha: 1);
-        color: #fff;
         font-size: 1.4rem;
     }
 }

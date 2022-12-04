@@ -36,7 +36,6 @@ p {
   background: linear-gradient(45deg, #9454a6, #f2cc0f, #8cbf3f);
   font-size: 1.2rem;
   font-weight: bold;
-  text-shadow: 0px 0px 15px #000000;
   border-radius: 7%;
   border: 3px solid #f2f2f2;
   color: #f2f2f2;
@@ -456,17 +455,14 @@ p {
 }
 .faq-accordion .accordion-purple:not(.collapsed) {
   background-color: #9454a6;
-  color: #fff;
   font-size: 1.4rem;
 }
 .faq-accordion .accordion-green:not(.collapsed) {
   background-color: #8cbf3f;
-  color: #fff;
   font-size: 1.4rem;
 }
 .faq-accordion .accordion-yellow:not(.collapsed) {
   background-color: #f2cc0f;
-  color: #fff;
   font-size: 1.4rem;
 }
 
